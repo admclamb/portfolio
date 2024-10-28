@@ -29,7 +29,7 @@ const ProjectCard = ({ project, index, layout }: ProjectCardProps) => {
             }
             className="text-muted-foreground text-sm md:text-base font-medium font-sans text-left"
           >
-            {dayjs(project.createdAt).format("MMM, YY")}
+            {dayjs(project.createdAt).format("MMM, YYYY")}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${project.title}` : undefined}
@@ -37,15 +37,6 @@ const ProjectCard = ({ project, index, layout }: ProjectCardProps) => {
           >
             {project.title}
           </motion.p>
-          <Link
-            href={`/project/${encodeURIComponent(project.slug)}`}
-            className={cn(
-              buttonVariants({ variant: "link" }),
-              "px-0 mt-5 text-base"
-            )}
-          >
-            Learn More
-          </Link>
         </div>
         <BlurImage
           src={project.coverImage}
