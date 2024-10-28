@@ -2,6 +2,7 @@ import { BlurImage } from "@/components/ui/apple-cards-carousel";
 import { buttonVariants } from "@/components/ui/button";
 import { Project } from "@/config/config";
 import { cn } from "@/lib/utils";
+import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
@@ -26,9 +27,9 @@ const ProjectCard = ({ project, index, layout }: ProjectCardProps) => {
             layoutId={
               layout ? `category-${project.categories.join(", ")}` : undefined
             }
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-muted-foreground text-sm md:text-base font-medium font-sans text-left"
           >
-            {project.projectOwner}
+            {dayjs(project.createdAt).format("MMM, YY")}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${project.title}` : undefined}
@@ -38,16 +39,19 @@ const ProjectCard = ({ project, index, layout }: ProjectCardProps) => {
           </motion.p>
           <Link
             href={`/project/${encodeURIComponent(project.slug)}`}
-            className={cn(buttonVariants({ variant: "link" }), "px-0 mt-5")}
+            className={cn(
+              buttonVariants({ variant: "link" }),
+              "px-0 mt-5 text-base"
+            )}
           >
-            Go to Project
+            Learn More
           </Link>
         </div>
         <BlurImage
           src={project.coverImage}
           alt={project.alt}
           fill
-          className="object-cover absolute z-10 inset-0 brightness-50"
+          className="object-cover absolute z-10 inset-0 brightness-[0.4]"
         />
       </Link>
     </motion.div>

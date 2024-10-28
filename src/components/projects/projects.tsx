@@ -13,7 +13,7 @@ const Projects = () => {
 
   return (
     <div className="py-16 sm:py-24 min-h-[60vh]">
-      <div className="space-y-4 mb-10 container mx-auto">
+      <div className="space-y-4 mb-10 container mx-auto px-5">
         <motion.h2
           initial={{ opacity: 0, x: -75 }}
           whileInView={{ opacity: 1, x: 0 }}

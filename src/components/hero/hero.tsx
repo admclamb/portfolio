@@ -7,6 +7,7 @@ import { Button, buttonVariants } from "../ui/button";
 import { Search } from "lucide-react";
 import { AuroraBackground } from "../ui/aurora-background";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const Hero = () => {
   return (
@@ -30,15 +31,18 @@ const Hero = () => {
             Hi, I'm Anthony, I love building things using computers.
           </p>
           <ul className=" mt-12 flex justify-center items-center gap-3">
-            <li>
+            <li className="w-full sm:w-fit">
               <Link
                 href="/work"
-                className={buttonVariants({ variant: "default" })}
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "w-full sm:w-fit"
+                )}
               >
                 See my work
               </Link>
             </li>
-            <li>
+            <li className="hidden md:block">
               <Button variant="outline" className="flex gap-5">
                 <Search />
                 <span>Search Portfolio...</span>
