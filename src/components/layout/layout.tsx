@@ -1,9 +1,8 @@
 import React, { ReactNode } from "react";
 import Footer from "./footer/footer";
-import Navbar from "./navbar/navbar";
 
 type Props = {
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const Layout = ({ children }: Props) => {
