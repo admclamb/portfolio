@@ -144,7 +144,7 @@ export const projects: Project[] = [
     title: "AI Adlibs",
     description:
       "Web application that allows users to generate madlibs using AI based on the users prompt. Originally built as a hackathon project and then scaled to 1.5k users a month. and over 15k generated adlibs.",
-    coverImage: "/projects/aiadlib-preview.png",
+    coverImage: "/projects/aiadlibs-mockup.jpg",
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
     projectOwner: "Ai Creators",
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     title: "Algowars",
     description:
       "*BETA* Online competive coding platform that gives users the ability to compete to solve the most algorithm problems as fast as possible.",
-    coverImage: "/projects/algowars-preview.png",
+    coverImage: "/projects/algowars-mockup.jpg",
     slug: "algowars",
     alt: "Algowars Cover Image",
     projectOwner: "algowars org",
