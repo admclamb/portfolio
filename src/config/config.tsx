@@ -142,8 +142,7 @@ export const categories = [
 export const projects: Project[] = [
   {
     title: "AI Adlibs",
-    description:
-      "Web application that allows users to generate madlibs using AI based on the users prompt. Originally built as a hackathon project and then scaled to 1.5k users a month. and over 15k generated adlibs.",
+    description: "App Madlib Generator App",
     coverImage: "/projects/aiadlibs-mockup.jpg",
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
@@ -289,6 +288,8 @@ export const projects: Project[] = [
 export interface Contribution {
   company: string;
   description: string;
+  imageUrl: string;
+  bgColor: string;
   link: string;
 }
 
@@ -298,5 +299,7 @@ export const contributions: Contribution[] = [
     description:
       "Fixed a bug for Firefox where moz-card should've been set to false in the constructor.",
     link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1911118",
+    imageUrl: "/logos/firefox.png",
+    bgColor: "bg-[#3178C6]/20",
   },
 ];
