@@ -142,7 +142,7 @@ export const categories = [
 export const projects: Project[] = [
   {
     title: "AI Adlibs",
-    description: "App Madlib Generator App",
+    description: "Web application for creating madlibs",
     coverImage: "/projects/aiadlibs-mockup.jpg",
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
