@@ -18,10 +18,12 @@ export const CardContainer = ({
   children,
   className,
   containerClassName,
+  rotate,
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  rotate?: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -43,6 +45,9 @@ export const CardContainer = ({
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
     setIsMouseEntered(false);
+    if (rotate) {
+      containerRef.current.style.transform = `rotate(${rotate}deg)`;
+    }
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (

@@ -40,7 +40,10 @@ const AboutHero = () => {
             playing zombie with my child, or playing Rocket League.
           </p>
         </div>
-        <CardContainer className="inter-var absolute -left-[30%] -rotate-12 bottom-0">
+        <CardContainer
+          className="inter-var absolute -left-[30%] -rotate-12 bottom-0"
+          rotate="12"
+        >
           <Image
             src="/projects/aiadlib-preview.png"
             height="1000"
@@ -49,7 +52,10 @@ const AboutHero = () => {
             alt="thumbnail"
           />
         </CardContainer>
-        <CardContainer className="inter-var absolute -right-[30%] -top-[550%] rotate-6 bottom-0">
+        <CardContainer
+          className="inter-var absolute -right-[30%] -top-[550%] rotate-6 bottom-0"
+          rotate="64"
+        >
           <Image
             src="/projects/aiadlib-preview.png"
             height="1000"

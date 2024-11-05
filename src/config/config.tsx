@@ -90,6 +90,7 @@ export const technologies: Technology[] = [
 export interface Project {
   title: string;
   description: string;
+  fullDescription: string;
   coverImage: string;
   slug: string;
   alt: string;
@@ -143,6 +144,8 @@ export const projects: Project[] = [
   {
     title: "AI Adlibs",
     description: "Web application for creating madlibs",
+    fullDescription:
+      "Web application that allows users to generate madlibs using AI based on the users prompt. Originally built as a hackathon project and then scaled to 3k users a month. and over 25k generated adlibs.",
     coverImage: "/projects/aiadlibs-mockup.jpg",
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
@@ -183,7 +186,8 @@ export const projects: Project[] = [
   },
   {
     title: "Algowars",
-    description:
+    description: "Online Competitive Programing Site",
+    fullDescription:
       "*BETA* Online competive coding platform that gives users the ability to compete to solve the most algorithm problems as fast as possible.",
     coverImage: "/projects/algowars-mockup.jpg",
     slug: "algowars",
@@ -222,7 +226,8 @@ export const projects: Project[] = [
   },
   {
     title: "Weatherly",
-    description:
+    description: "Easy-to-use Weather Application",
+    fullDescription:
       "User-centric web application that aggregates real-time wehater data to display personalized weather forecasts and insights.",
     coverImage: "/projects/weatherly-preview.png",
     slug: "weatherly",
@@ -258,7 +263,8 @@ export const projects: Project[] = [
   },
   {
     title: "China Garden Ordering Platform",
-    description:
+    description: "Online Restaurant Odering Platform",
+    fullDescription:
       "Online ordering platform proof of concept for users having the ability to oder chinese food online for China Garden chinese restaurant in Big Pine Key, Florida.",
     coverImage: "/projects/china-garden-preview.png",
     slug: "china-garden",
