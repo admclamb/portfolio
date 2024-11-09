@@ -2,7 +2,9 @@
 
 import { CardContainer } from "@/components/ui/3d-card";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { experience } from "@/config/config";
 import { cn } from "@/lib/utils";
+import { formatDateToYear } from "@/utils/format-date";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import Image from "next/image";
@@ -35,12 +37,51 @@ const AboutHero = () => {
             (practically Java). I&apos;ve also recently started contributing to
             open-source for firefox bugzilla.
           </p>
-          <p className="text-center text-muted-foreground mt-6 text-lg">
-            When I&apos;m not programming. I&apos;m probably spending time
-            playing zombie with my child, or playing Rocket League.
-          </p>
+
+          <div className="mt-48 flex flex-col gap-5 items-center">
+            <h3 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center">
+              Work History
+            </h3>
+            <ul>
+              {experience.work.map((job) => (
+                <li
+                  key={job.company + job.title}
+                  className="text-muted-foreground font-semibold flex flex-col md:flex-row md:justify-between lg:max-w-5xl gap-1 lg:gap-5"
+                >
+                  <span className="no-wrap">
+                    {formatDateToYear(job.startDate)} -{" "}
+                    {formatDateToYear(job.endDate)}
+                  </span>
+                  <span>
+                    {job.title} at {job.company}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-48 flex flex-col gap-5 items-center mb-48">
+            <h3 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center">
+              Education
+            </h3>
+            <ul className="flex flex-col gap-10 md:gap-3">
+              {experience.education.map((school) => (
+                <li
+                  key={school.school + school.title}
+                  className="text-muted-foreground font-semibold flex flex-col md:flex-row md:justify-between lg:max-w-xl gap-1 lg:gap-5"
+                >
+                  <span>
+                    {formatDateToYear(school.startDate)} -{" "}
+                    {formatDateToYear(school.endDate)}
+                  </span>
+                  <span>
+                    {school.title} at {school.school}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <CardContainer
+        {/* <CardContainer
           className="inter-var absolute -left-[30%] -rotate-12 bottom-0"
           rotate="12"
         >
@@ -63,7 +104,7 @@ const AboutHero = () => {
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
-        </CardContainer>
+        </CardContainer> */}
       </motion.div>
     </div>
   );

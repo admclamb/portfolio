@@ -309,3 +309,45 @@ export const contributions: Contribution[] = [
     bgColor: "bg-[#3178C6]/20",
   },
 ];
+
+export interface WorkExperience {
+  startDate: Date;
+  endDate: Date | null;
+  title: string;
+  company: string;
+}
+
+export interface EducationExperience {
+  startDate: Date;
+  endDate: Date | null;
+  title: string;
+  school: string;
+}
+
+export const experience: {
+  work: WorkExperience[];
+  education: EducationExperience[];
+} = {
+  work: [
+    {
+      startDate: new Date("2022-08-01T04:17:20.651Z"),
+      endDate: new Date("2023-08-01T04:17:20.651Z"),
+      title: "Software Engineer Intern",
+      company: "nCino",
+    },
+  ],
+  education: [
+    {
+      startDate: new Date("2021-10-12T04:17:20.651Z"), // Corrected the format here
+      endDate: new Date("2022-05-14T04:17:20.651Z"),
+      title: "Full stack web development",
+      school: "Thinkful",
+    },
+    {
+      startDate: new Date("2019-08-20T04:17:20.651Z"), // Corrected the format here
+      endDate: null,
+      title: "Associates in Science",
+      school: "Cape Fear",
+    },
+  ],
+};
