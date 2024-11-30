@@ -87,6 +87,12 @@ export const technologies: Technology[] = [
   },
 ];
 
+export const aboutMe = {
+  name: "Anthony Mclamb",
+  pfp: "/profile-pic.jpeg",
+  pfpAlt: "Anthony Mclamb profile picture with family",
+};
+
 export interface Project {
   title: string;
   description: string;

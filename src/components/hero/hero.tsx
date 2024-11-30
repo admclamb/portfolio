@@ -22,7 +22,6 @@ const Hero = () => {
         }}
         className="relative flex flex-col gap-4 px-4 text-white"
       >
-        <Navbar className="mt-8" />
         <div className="max-w-3xl pt-20 sm:pt-24 lg:pt-32 flex flex-col">
           <h1 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center">
             Full Stack Developer Based out of Charlotte
