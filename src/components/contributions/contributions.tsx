@@ -29,7 +29,7 @@ const Contributions = () => {
           contributions.
         </motion.p>
       </div>
-      <ul className="flex items-center gap-5">
+      <ul className="flex items-start gap-5">
         {contributions.map((contribution) => (
           <li key={contribution.description}>
             <ContributionCard contribution={contribution} />
