@@ -3,19 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-paragraph), sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-title), serif;
-  color: var(--accent-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer base {
@@ -97,5 +85,26 @@ h6 {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .title {
+    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
+  }
+  .link {
+    @apply text-muted-foreground transition-colors hover:text-foreground;
+  }
+  .prose pre {
+    @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
+  }
+  .prose pre code {
+    @apply p-0 leading-[1.75];
+  }
+  .prose code {
+    @apply rounded-lg px-1 py-0.5;
+  }
+  .prose code span {
+    @apply font-medium;
+  }
+  .input-error {
+    @apply ml-1 mt-2 text-sm text-rose-400;
   }
 }

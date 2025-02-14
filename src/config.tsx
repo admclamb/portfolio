@@ -370,6 +370,8 @@ export interface WorkExperience {
   company: string;
   companyLogo: string;
   description: string[];
+  fallbackLogo: string;
+  companyUrl: string;
 }
 
 export interface EducationExperience {
@@ -390,11 +392,12 @@ export const experience: {
       title: "Software Engineer Intern",
       description: [
         "Develop upon the retail/consumer banking platform in Angular, TypeScript, Salesforce, Apex, and SOQL.",
-        "Built upon HCM, HPML, and TRID features.",
         "Engaged in discussions around sprint  and backlog prioritization from a technical perspective.",
       ],
       company: "nCino",
-      companyLogo: "/logo/ncino-logo.jpeg",
+      companyLogo: "logos/ncino-logo.jpeg",
+      companyUrl: "https://www.ncino.com/en-US",
+      fallbackLogo: "NC",
     },
   ],
   education: [
