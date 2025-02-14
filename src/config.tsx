@@ -368,6 +368,8 @@ export interface WorkExperience {
   endDate: Date | null;
   title: string;
   company: string;
+  companyLogo: string;
+  description: string[];
 }
 
 export interface EducationExperience {
@@ -386,7 +388,13 @@ export const experience: {
       startDate: new Date("2022-08-01T04:17:20.651Z"),
       endDate: new Date("2023-08-01T04:17:20.651Z"),
       title: "Software Engineer Intern",
+      description: [
+        "Develop upon the retail/consumer banking platform in Angular, TypeScript, Salesforce, Apex, and SOQL.",
+        "Built upon HCM, HPML, and TRID features.",
+        "Engaged in discussions around sprint  and backlog prioritization from a technical perspective.",
+      ],
       company: "nCino",
+      companyLogo: "/logo/ncino-logo.jpeg",
     },
   ],
   education: [
