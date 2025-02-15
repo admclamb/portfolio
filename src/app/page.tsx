@@ -5,11 +5,12 @@ import { SidebarMainHeader } from "@/components/sidebar/sidebar-main-header";
 import { Hero } from "@/components/hero";
 import { ExperienceCard } from "@/features/experience/experience-card";
 import { FeaturedProjects } from "@/features/projects/featured-projects/featured-projects";
+import { FeaturedContributions } from "@/features/contributions/featured-contributions";
 
 export default function Home() {
   return (
     <Layout>
-      <Container className="flex flex-col gap-11">
+      <Container className="flex flex-col gap-12 mb-10">
         <SidebarMainHeader
           breadcrumbs={[
             {
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <ExperienceCard />
         <FeaturedProjects />
+        <FeaturedContributions />
       </Container>
     </Layout>
   );

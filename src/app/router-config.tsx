@@ -13,4 +13,9 @@ export const routerConfig = {
   contact: {
     path: "/contact",
   },
+  contributions: {
+    path: "/contributions",
+    execute: ({ tags }: { tags: string[] }) =>
+      `/contributions?tags=${encodeURIComponent(tags.join(","))}`,
+  },
 };

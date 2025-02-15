@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export interface Link {
   href: string;
@@ -26,6 +27,13 @@ export const links: Link[] = [
       <FontAwesomeIcon icon={faLinkedinIn} className={className} size={size} />
     ),
     ariaLabel: "Anthony's Linkedin",
+  },
+  {
+    href: "adylanmclamb@gmail.com",
+    icon: ({ className, size }) => (
+      <FontAwesomeIcon icon={faEnvelope} className={className} size={size} />
+    ),
+    ariaLabel: "Anthony's email",
   },
 ];
 
@@ -300,9 +308,10 @@ export const projects: Project[] = [
 export interface Contribution {
   company: string;
   description: string;
-  imageUrl: string | ReactNode;
+  imageUrl: string;
   bgColor: string;
   link: string;
+  imageFallback: string;
 }
 
 export const contributions: Contribution[] = [
@@ -313,48 +322,19 @@ export const contributions: Contribution[] = [
     link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1911118",
     imageUrl: "/logos/firefox.png",
     bgColor: "bg-[#3178C6]/20",
+    imageFallback: "FF",
   },
   {
     company: "Shadcn",
+    imageFallback: "Scn",
     description: "Report bug on documentation page with duplicate hyphens",
     link: "https://github.com/shadcn-ui/ui/issues/4839",
-    imageUrl: (
-      <>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 256 256"
-          className="h-6 w-6"
-        >
-          <rect width="256" height="256" fill="none"></rect>
-          <line
-            x1="208"
-            y1="128"
-            x2="128"
-            y2="208"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="32"
-          ></line>
-          <line
-            x1="192"
-            y1="40"
-            x2="40"
-            y2="192"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="32"
-          ></line>
-        </svg>
-      </>
-    ),
+    imageUrl: "/logos/shadcn.png",
     bgColor: "bg-[#000]/20",
   },
   {
     company: "Firefox",
+    imageFallback: "FF",
     description:
       "Fix console warning by only getting URL when needed in URL bar.",
     link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1922535",

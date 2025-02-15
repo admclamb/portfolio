@@ -9,7 +9,13 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { Logo } from "../logo";
-import { Briefcase, Mail, MessageSquareText, Zap } from "lucide-react";
+import {
+  Briefcase,
+  GitBranch,
+  Mail,
+  MessageSquareText,
+  Zap,
+} from "lucide-react";
 import { routerConfig } from "@/app/router-config";
 import { SidebarMain } from "./sidebar-main";
 import { usePathname } from "next/navigation";
@@ -38,6 +44,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         icon: Briefcase,
       },
       {
+        title: "Contributions",
+        url: routerConfig.contributions.path,
+        isActive: pathname === routerConfig.contributions.path,
+        icon: GitBranch,
+      },
+      {
         title: "Contact",
         url: routerConfig.contact.path,
         isActive: pathname === routerConfig.contact.path,
@@ -45,8 +57,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       },
     ],
   };
-
-  console.log("DATA: ", data);
 
   return (
     <Sidebar {...props}>
