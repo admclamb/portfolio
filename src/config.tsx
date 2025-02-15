@@ -160,7 +160,7 @@ export const projects: Project[] = [
     title: "AI Adlibs",
     description: "Web application for creating madlibs",
     fullDescription:
-      "Web application that allows users to generate madlibs using AI based on the users prompt. Originally built as a hackathon project and then scaled to 3k users a month. and over 25k generated adlibs.",
+      "Web application that allows users to generate madlibs using AI based on the users prompt. Originally built as a hackathon project and then scaled to 3k users a month. and over 35k generated adlibs.",
     coverImage: "/projects/aiadlibs-mockup.jpg",
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
@@ -240,6 +240,7 @@ export const projects: Project[] = [
     createdAt: new Date("2024-01-12T00:00:00Z"),
     finishedAt: null,
     githubLink: "https://github.com/algowars/algowars",
+    deployedLink: "https://www.algowars.dev",
   },
   {
     title: "Weatherly",

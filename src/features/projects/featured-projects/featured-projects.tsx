@@ -1,5 +1,4 @@
 import { routerConfig } from "@/app/router-config";
-import { T2 } from "@/components/typography/t2";
 import { buttonVariants } from "@/components/ui/button";
 import { projects } from "@/config";
 import { ArrowRight } from "lucide-react";

@@ -1,6 +1,5 @@
 import { routerConfig } from "@/app/router-config";
 import { TMuted } from "@/components/typography/t-muted";
-import { T2 } from "@/components/typography/t2";
 import { buttonVariants } from "@/components/ui/button";
 import { contributions } from "@/config";
 import { ArrowRight } from "lucide-react";

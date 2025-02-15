@@ -30,7 +30,7 @@ export const FeaturedProjectCard = ({ project }: FeaturedProjectCardProps) => {
         <div>
           <CardTitle className="text-base">{project.title}</CardTitle>
           <p className="text-muted-foreground text-sm mb-2">
-            {project.description}
+            {project.fullDescription}
           </p>
         </div>
 
