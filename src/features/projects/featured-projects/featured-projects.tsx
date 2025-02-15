@@ -9,15 +9,15 @@ export const FeaturedProjects = () => {
   return (
     <section className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
-        <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
+        <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
         <Link
           href={routerConfig.projects.path}
           className={buttonVariants({ variant: "ghost" })}
         >
-          Show More <ArrowRight />
+          view more <ArrowRight />
         </Link>
       </div>
-      <section className="grid grid-cols-2 gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {projects
           .filter((project) => project.isFeatured)
           .map((project) => (

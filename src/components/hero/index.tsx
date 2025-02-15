@@ -1,20 +1,27 @@
 import { ResumeButton } from "@/features/resume/resume-button";
 import { TMuted } from "../typography/t-muted";
-import { links } from "@/config";
+import { experience, links } from "@/config";
 
 export const Hero = () => {
   return (
     <section className="py-5">
       <span className="text-4xl">👋</span>
-      <h2 className="mb-2 title text-4xl">Hello there! I&apos;m Anthony</h2>
+      <h2 className="mb-3 title text-4xl">Hello there! I&apos;m Anthony</h2>
       <TMuted className="mb-2">
         I&apos;m a full-stack developer that loves building products and web
         apps
       </TMuted>
       <TMuted className="mb-10">
         I have a year of experience working as a software engineer intern
-        @nCino, and 2 years building personal projects and contributing to open
-        soure.
+        <a
+          href={experience.work[0].companyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-0.5"
+        >
+          @nCino
+        </a>
+        , and 2 years building personal projects and contributing to open soure.
       </TMuted>
       <ul className="flex items-center gap-7">
         <li>

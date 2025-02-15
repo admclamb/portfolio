@@ -26,12 +26,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         isActive: pathname === routerConfig.root.path,
       },
       {
-        title: "About",
-        url: routerConfig.about.path,
-        icon: MessageSquareText,
-        isActive: pathname === routerConfig.about.path,
-      },
-      {
         title: "Projects",
         url: routerConfig.projects.path,
         isActive: pathname === routerConfig.projects.path,

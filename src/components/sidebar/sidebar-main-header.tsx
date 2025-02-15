@@ -22,7 +22,7 @@ type SidebarMainHeaderProps = {
 
 export const SidebarMainHeader = ({
   children = (
-    <ul className="ml-auto mr-3">
+    <ul className="ml-auto">
       <li>
         <DarkModeButton />
       </li>

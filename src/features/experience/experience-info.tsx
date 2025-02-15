@@ -17,9 +17,9 @@ export const ExperienceInfo = () => {
               href={experience.companyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute -left-[9%] top-5"
+              className="absolute -left-16 top-4 flex items-center justify-center rounded-full"
             >
-              <Avatar>
+              <Avatar className="size-12">
                 <AvatarImage src={experience.companyLogo} />
                 <AvatarFallback>{experience.fallbackLogo}</AvatarFallback>
               </Avatar>

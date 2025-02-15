@@ -2,7 +2,6 @@ import { Container } from "@/components/container/container";
 import { Layout } from "@/components/layout";
 import { SidebarMainHeader } from "@/components/sidebar/sidebar-main-header";
 import { routerConfig } from "../router-config";
-import { T1 } from "@/components/typography/t1";
 import { ProjectsList } from "@/features/projects/projects";
 
 export default function Projects() {
@@ -23,7 +22,7 @@ export default function Projects() {
         />
         <section>
           {/* <span className="text-4xl">💼</span> */}
-          <T1>What I&apos;ve been working on</T1>
+          <h2 className="title text-5xl">What I&apos;ve been working on</h2>
         </section>
         <ProjectsList />
       </Container>

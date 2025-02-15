@@ -11,9 +11,9 @@ export const EducationInfo = () => {
       <ul className="border-l ml-10">
         {experience.education.map((ed) => (
           <li key={ed.school} className="py-3 ml-10 relative">
-            <span className="absolute -left-[9%] top-5">
-              <Avatar>
-                <AvatarImage src={ed.schoolLogo} />
+            <span className="absolute -left-16 top-4 flex items-center justify-center rounded-full">
+              <Avatar className="size-12">
+                <AvatarImage src={ed.schoolLogo} alt={ed.title} />
                 <AvatarFallback>{ed.fallbackLogo}</AvatarFallback>
               </Avatar>
             </span>
