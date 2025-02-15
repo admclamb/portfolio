@@ -18,4 +18,7 @@ export const routerConfig = {
     execute: ({ tags }: { tags: string[] }) =>
       `/contributions?tags=${encodeURIComponent(tags.join(","))}`,
   },
+  resume: {
+    path: "/resume.pdf",
+  },
 };

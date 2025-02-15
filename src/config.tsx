@@ -115,6 +115,7 @@ export interface Project {
   githubLink?: string;
   deployedLink?: string;
   showcase?: ProjectImage[];
+  isFeatured?: boolean;
 }
 
 export interface ProjectImage {
@@ -164,6 +165,7 @@ export const projects: Project[] = [
     slug: "ai-adlibs",
     alt: "Ai Adlibs Cover Image",
     projectOwner: "Ai Creators",
+    isFeatured: true,
     categories: [
       {
         id: 1,
@@ -207,6 +209,7 @@ export const projects: Project[] = [
     slug: "algowars",
     alt: "Algowars Cover Image",
     projectOwner: "algowars org",
+    isFeatured: true,
     categories: [
       {
         id: 1,
@@ -312,6 +315,7 @@ export interface Contribution {
   bgColor: string;
   link: string;
   imageFallback: string;
+  isFeatured?: boolean;
 }
 
 export const contributions: Contribution[] = [
@@ -323,6 +327,7 @@ export const contributions: Contribution[] = [
     imageUrl: "/logos/firefox.png",
     bgColor: "bg-[#3178C6]/20",
     imageFallback: "FF",
+    isFeatured: true,
   },
   {
     company: "Shadcn",
@@ -340,6 +345,7 @@ export const contributions: Contribution[] = [
     link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1922535",
     imageUrl: "/logos/firefox.png",
     bgColor: "bg-[#3178C6]/20",
+    isFeatured: true,
   },
 ];
 
@@ -399,7 +405,7 @@ export const experience: {
     {
       startDate: new Date("2019-08-20T04:17:20.651Z"),
       endDate: null,
-      title: "Associates in Arts",
+      title: "Basic Studies",
       school: "Cape Fear Community College",
       schoolLogo: "/logos/cfcc.png",
       fallbackLogo: "CFCC",

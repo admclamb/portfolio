@@ -17,8 +17,10 @@ export const Layout = ({
       <SidebarProvider defaultOpen={isOpenedByDefault}>
         <AppSidebar />
         <SidebarInset>
-          {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <main className="grow">{children}</main>
+            <Footer />
+          </div>
         </SidebarInset>
       </SidebarProvider>
       <Toaster />

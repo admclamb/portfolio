@@ -19,9 +19,11 @@ export const FeaturedProjects = () => {
         </Link>
       </div>
       <section className="grid grid-cols-2 gap-5">
-        {projects.map((project) => (
-          <FeaturedProjectCard project={project} key={project.title} />
-        ))}
+        {projects
+          .filter((project) => project.isFeatured)
+          .map((project) => (
+            <FeaturedProjectCard project={project} key={project.title} />
+          ))}
       </section>
     </section>
   );

@@ -3,7 +3,7 @@ import { Container } from "../container/container";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="my-10">
       <div>
         <Container className="text-muted-foreground py-5 flex justify-between items-center mb-10">
           <span className="text-sm">&copy; 2025 Anthony Mclamb</span>

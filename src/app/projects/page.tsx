@@ -2,7 +2,8 @@ import { Container } from "@/components/container/container";
 import { Layout } from "@/components/layout";
 import { SidebarMainHeader } from "@/components/sidebar/sidebar-main-header";
 import { routerConfig } from "../router-config";
-import { ExperienceCard } from "@/features/experience/experience-card";
+import { T1 } from "@/components/typography/t1";
+import { ProjectsList } from "@/features/projects/projects";
 
 export default function Projects() {
   return (
@@ -20,7 +21,11 @@ export default function Projects() {
             },
           ]}
         />
-        <ExperienceCard />
+        <section>
+          {/* <span className="text-4xl">💼</span> */}
+          <T1>What I&apos;ve been working on</T1>
+        </section>
+        <ProjectsList />
       </Container>
     </Layout>
   );

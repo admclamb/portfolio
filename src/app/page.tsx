@@ -10,7 +10,7 @@ import { FeaturedContributions } from "@/features/contributions/featured-contrib
 export default function Home() {
   return (
     <Layout>
-      <Container className="flex flex-col gap-12 mb-10">
+      <Container className="flex flex-col gap-12">
         <SidebarMainHeader
           breadcrumbs={[
             {
