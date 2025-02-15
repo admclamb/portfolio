@@ -9,7 +9,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { Logo } from "../logo";
-import { Briefcase, GitBranch, MessageSquareText, Zap } from "lucide-react";
+import { Briefcase, GitBranch, Zap } from "lucide-react";
 import { routerConfig } from "@/app/router-config";
 import { SidebarMain } from "./sidebar-main";
 import { usePathname } from "next/navigation";
