@@ -379,6 +379,9 @@ export interface EducationExperience {
   endDate: Date | null;
   title: string;
   school: string;
+  schoolLogo: string;
+  fallbackLogo: string;
+  description: string[];
 }
 
 export const experience: {
@@ -406,12 +409,21 @@ export const experience: {
       endDate: new Date("2022-05-14T04:17:20.651Z"),
       title: "Full stack web development",
       school: "Thinkful",
+      schoolLogo: "/logos/thinkful.png",
+      fallbackLogo: "T",
+      description: [
+        "Became proficient in full-stack web development",
+        "Learned HTML, CSS, JavaScript, BootStrap, Express, Nodejs, React, PostgreSQL",
+      ],
     },
     {
       startDate: new Date("2019-08-20T04:17:20.651Z"),
       endDate: null,
-      title: "Associates in Science",
-      school: "Cape Fear",
+      title: "Associates in Arts",
+      school: "Cape Fear Community College",
+      schoolLogo: "/logos/cfcc.png",
+      fallbackLogo: "CFCC",
+      description: [],
     },
   ],
 };

@@ -1,5 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExperienceInfo } from "./experience-info";
+import { EducationInfo } from "./education-info";
 
 export const ExperienceCard = () => {
   return (
@@ -15,7 +16,9 @@ export const ExperienceCard = () => {
       <TabsContent value="experience">
         <ExperienceInfo />
       </TabsContent>
-      <TabsContent value="education"></TabsContent>
+      <TabsContent value="education">
+        <EducationInfo />
+      </TabsContent>
     </Tabs>
   );
 };

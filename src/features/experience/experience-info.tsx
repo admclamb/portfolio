@@ -26,7 +26,9 @@ export const ExperienceInfo = () => {
             </a>
             <p className="text-sm text-muted-foreground">
               {dayjs(experience.startDate).format("MMM YYYY")} -{" "}
-              {dayjs(experience.endDate).format("MMM YYYY")}
+              {experience.endDate
+                ? dayjs(experience.endDate).format("MMM YYYY")
+                : "Current"}
             </p>
             <p className="font-bold">{experience.company}</p>
             <p className="text-muted-foreground text-sm mb-3">
