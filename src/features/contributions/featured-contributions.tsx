@@ -12,14 +12,14 @@ export const FeaturedContributions = () => {
     <section className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
         <div>
-          <T2>Featured Contributions</T2>
-          <TMuted>View my featured open source contributions</TMuted>
+          <h2 className="title text-2xl sm:text-3xl">Featured Contributions</h2>
+          <TMuted>view my featured open source contributions</TMuted>
         </div>
         <Link
-          href={routerConfig.projects.path}
+          href={routerConfig.contributions.path}
           className={buttonVariants({ variant: "ghost" })}
         >
-          Show More <ArrowRight />
+          view more <ArrowRight />
         </Link>
       </div>
       <ul className="flex flex-col border rounded-xl">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
+import { Calistoga, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
@@ -7,16 +7,11 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-const libreBaskerville = Libre_Baskerville({
-  variable: "--font-libre-baskerville",
+const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const serif = Calistoga({
   subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  variable: "--font-serif",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${libreBaskerville.variable} ${sourceSans.variable} antialiased`}
+        className={`${sans.variable} ${serif.variable} antialiased font-sans`}
       >
         <ThemeProvider
           attribute="class"

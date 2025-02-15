@@ -10,7 +10,7 @@ export const FeaturedProjects = () => {
   return (
     <section className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
-        <T2>Featured Projects</T2>
+        <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
         <Link
           href={routerConfig.projects.path}
           className={buttonVariants({ variant: "ghost" })}
