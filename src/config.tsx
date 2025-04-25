@@ -382,6 +382,18 @@ export const experience: {
 } = {
   work: [
     {
+      startDate: new Date("2025-03-21:09:00:000z"),
+      endDate: null,
+      title: "Software Developer I",
+      description: [
+        "Contribute to the Vendor Management System. Worked with C#, Angular, BootStrap, .NET, TSQL, Visual Basic, and ASP.NET",
+      ],
+      company: "Knowledge Services",
+      companyLogo: "",
+      companyUrl: "https://www.knowledgeservices.com",
+      fallbackLogo: "KS",
+    },
+    {
       startDate: new Date("2022-08-01T04:17:20.651Z"),
       endDate: new Date("2023-08-01T04:17:20.651Z"),
       title: "Software Engineer Intern",

@@ -18,7 +18,7 @@ export const Layout = ({
         <AppSidebar />
         <SidebarInset>
           <div className="flex min-h-screen flex-col">
-            <main className="grow px-3">{children}</main>
+            <main className="grow px-4">{children}</main>
             <Footer />
           </div>
         </SidebarInset>

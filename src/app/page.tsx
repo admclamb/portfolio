@@ -5,6 +5,7 @@ import { SidebarMainHeader } from "~/components/sidebar/sidebar-main-header";
 import { HydrateClient } from "~/trpc/server";
 import { routerConfig } from "./router-config";
 import Hero from "~/features/hero/hero";
+import ExperienceCard from "~/features/experience/experience-card";
 
 export default async function Home() {
   return (
@@ -20,8 +21,8 @@ export default async function Home() {
             ]}
           />
           <Hero />
-          {/* <ExperienceCard />
-          <FeaturedProjects />
+          <ExperienceCard />
+          {/*<FeaturedProjects />
           <FeaturedContributions /> */}
         </Container>
       </Layout>

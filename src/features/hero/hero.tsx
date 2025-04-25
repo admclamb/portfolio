@@ -13,7 +13,7 @@ export default function hero() {
         I&apos;m a full-stack developer that loves building products and web
         apps
       </p>
-      <p className="max-w-2xl text-muted-foreground">
+      <p className="mb-2 max-w-2xl text-muted-foreground">
         I have a year of experience working as a software engineer intern@nCino,
         and 2 years building personal projects and contributing to open soure.
       </p>
