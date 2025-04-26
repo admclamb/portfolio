@@ -10,7 +10,7 @@ export const FeaturedContributions = () => {
     <section className="flex flex-col gap-8">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="title text-2xl sm:text-3xl">Featured Contributions</h2>
+          <h2 className="title text-2xl sm:text-3xl">featured contributions</h2>
           <p className="text-muted-foreground">
             view my featured open source contributions
           </p>
