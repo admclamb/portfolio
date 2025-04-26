@@ -21,7 +21,10 @@ export const ContributionCard = ({ contribution }: ContributionCardProps) => {
     <Card className="rounded-none rounded-xl border-none">
       <CardHeader className="flex flex-row items-center gap-3">
         <Avatar>
-          <AvatarImage src={contribution.imageUrl} />
+          <AvatarImage
+            src={contribution.imageUrl}
+            alt={`${contribution.company} logo`}
+          />
           <AvatarFallback>{contribution.imageFallback}</AvatarFallback>
         </Avatar>
         <div>

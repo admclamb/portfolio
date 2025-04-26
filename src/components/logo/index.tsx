@@ -8,7 +8,10 @@ export const Logo = () => {
   return (
     <div className="flex items-center gap-3 py-3">
       <Avatar>
-        <AvatarImage src="/pfp.png" />
+        <AvatarImage
+          src="/pfp.png"
+          alt="Anthony Mclamb profile pic with family"
+        />
         <AvatarFallback>AM</AvatarFallback>
       </Avatar>
       <h1>

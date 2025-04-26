@@ -18,7 +18,10 @@ export const ExperienceInfo = () => {
               className="absolute -left-16 top-4 flex items-center justify-center rounded-full"
             >
               <Avatar className="size-12">
-                <AvatarImage src={experience.companyLogo} />
+                <AvatarImage
+                  src={experience.companyLogo}
+                  alt={`${experience.company} logo`}
+                />
                 <AvatarFallback>{experience.fallbackLogo}</AvatarFallback>
               </Avatar>
             </a>
