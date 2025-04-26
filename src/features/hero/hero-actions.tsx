@@ -1,15 +1,23 @@
+"use client";
+
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FileUser } from "lucide-react";
+import { redirect } from "next/navigation";
 import React from "react";
+import { routerConfig } from "~/app/router-config";
 import { Button } from "~/components/ui/button";
 import { links } from "~/config";
 
 export default function HeroActions() {
+  const navigateToResume = () => {
+    redirect(routerConfig.resume.path);
+  };
+
   return (
     <ul className="flex items-center gap-6">
       <li>
-        <Button variant="outline">
+        <Button variant="outline" onClick={navigateToResume}>
           Resume <FileUser />
         </Button>
       </li>

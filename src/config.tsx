@@ -34,7 +34,7 @@ export const links: Link[] = [
     ariaLabel: "Anthony's Linkedin",
   },
   {
-    href: "adylanmclamb@gmail.com",
+    href: "mailto:adylanmclamb@gmail.com",
     icon: ({ className, size }) => (
       <FontAwesomeIcon icon={faEnvelope} className={className} size={size} />
     ),

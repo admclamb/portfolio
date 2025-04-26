@@ -10,12 +10,16 @@ export default function hero() {
         I&apos;m Anthony Mclamb
       </h1>
       <p className="max-w-2xl text-muted-foreground">
-        I&apos;m a full-stack developer that loves building products and web
-        apps
+        I&apos;m a full-stack developer based out of{" "}
+        <span className="text-green-600 underline dark:text-green-400">
+          North Carolina
+        </span>
+        .
       </p>
       <p className="mb-2 max-w-2xl text-muted-foreground">
-        I have a year of experience working as a software engineer intern@nCino,
-        and 2 years building personal projects and contributing to open soure.
+        I have over a year of experience working as a software engineer in
+        banking and cybersecurity. I also have 2 years of building personal
+        projects and contributing to open soure.
       </p>
       <HeroActions />
     </section>

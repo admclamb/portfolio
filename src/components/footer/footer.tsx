@@ -32,13 +32,7 @@ export const Footer = () => {
             </li>
             <li>
               {links[2] && (
-                <a
-                  href={links[2].href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {links[2].icon({ size: "xl" })}
-                </a>
+                <a href={links[2].href}>{links[2].icon({ size: "xl" })}</a>
               )}
             </li>
           </ul>
