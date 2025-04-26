@@ -389,7 +389,7 @@ export const experience: {
         "Contribute to the Vendor Management System. Worked with C#, Angular, BootStrap, .NET, TSQL, Visual Basic, and ASP.NET",
       ],
       company: "Knowledge Services",
-      companyLogo: "",
+      companyLogo: "logos/ks.png",
       companyUrl: "https://www.knowledgeservices.com",
       fallbackLogo: "KS",
     },

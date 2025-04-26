@@ -6,6 +6,8 @@ import { HydrateClient } from "~/trpc/server";
 import { routerConfig } from "./router-config";
 import Hero from "~/features/hero/hero";
 import ExperienceCard from "~/features/experience/experience-card";
+import { FeaturedProjects } from "~/features/projects/featured-projects/featured-projects";
+import { FeaturedContributions } from "~/features/contributions/featured-contributions";
 
 export default async function Home() {
   return (
@@ -22,8 +24,8 @@ export default async function Home() {
           />
           <Hero />
           <ExperienceCard />
-          {/*<FeaturedProjects />
-          <FeaturedContributions /> */}
+          <FeaturedProjects />
+          <FeaturedContributions />
         </Container>
       </Layout>
     </HydrateClient>
