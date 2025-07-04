@@ -8,6 +8,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "~/components/ui/badge";
 
 type FeaturedProjectCardProps = {
   project: Project;
@@ -29,6 +30,11 @@ export const FeaturedProjectCard = ({ project }: FeaturedProjectCardProps) => {
         </div>
         <div>
           <CardTitle className="text-base">{project.title}</CardTitle>
+          {project.isWorkInProgress ? (
+            <Badge variant="destructive" className="mb-2">
+              Work In Progress
+            </Badge>
+          ) : null}
           <p className="mb-2 text-sm text-muted-foreground">
             {project.fullDescription}
           </p>

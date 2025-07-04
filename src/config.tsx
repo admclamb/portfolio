@@ -121,6 +121,7 @@ export interface Project {
   deployedLink?: string;
   showcase?: ProjectImage[];
   isFeatured?: boolean;
+  isWorkInProgress?: boolean;
 }
 
 export interface ProjectImage {
@@ -215,6 +216,7 @@ export const projects: Project[] = [
     alt: "Algowars Cover Image",
     projectOwner: "algowars org",
     isFeatured: true,
+    isWorkInProgress: true,
     categories: [
       {
         id: 1,
@@ -349,6 +351,15 @@ export const contributions: Contribution[] = [
     description:
       "Fix console warning by only getting URL when needed in URL bar.",
     link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1922535",
+    imageUrl: "/logos/firefox.png",
+    bgColor: "bg-[#3178C6]/20",
+    isFeatured: true,
+  },
+  {
+    company: "Firefox",
+    imageFallback: "FF",
+    description: "Add moz-input-color link to the customElement.js",
+    link: "https://bugzilla.mozilla.org/show_bug.cgi?id=1967827",
     imageUrl: "/logos/firefox.png",
     bgColor: "bg-[#3178C6]/20",
     isFeatured: true,
